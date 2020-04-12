@@ -10,7 +10,7 @@ DECLARE
 BEGIN
     comppuesto:=compruebaPuesto(numEmple,puestoEmple);
     if comppuesto=false then
-        -- Llamada al procedimiento para asignar el puesto
+        cambiapuesto(numEmple, puestoEmple);
     else 
         if comppuesto=null then
             dbms_output.put_line('El empleado '||initcap(numEmple)||' no existe');
